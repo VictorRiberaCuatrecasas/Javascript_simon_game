@@ -18,6 +18,15 @@ body {
   color: white;
   font-family: "Press Start 2P", cursive;
 }
+footer {
+  width: 100%;
+  height: 4em;
+  background-color: #133357;
+  padding-top: 1em;
+}
+footer p {
+  color: white;
+}
 
 th {
   padding-bottom: 15px;
