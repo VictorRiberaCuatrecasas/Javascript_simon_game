@@ -7,6 +7,7 @@ let scoreboard = [];
 let table1 = document.querySelector("#table1");
 
 // STARTS THE GAME ON CLICK
+
 $("#level-title").click(function() {
   startOver();
   if (!started) {
@@ -39,7 +40,7 @@ function animatePress(currentColor) {
 
   setTimeout(function() {
     $("#" + currentColor).removeClass("pressed");
-  }, 100);
+  }, 300);
 }
 
 //CHEKING THE ANSWER
@@ -77,14 +78,16 @@ function nextSequence() {
   gamePattern.push(randomChosenColour);
 
   $("#" + randomChosenColour)
-    .fadeIn(100)
-    .fadeOut(100)
-    .fadeIn(100);
+    .fadeOut(200)
+    .fadeIn(200)
+    .fadeOut(200)
+    .fadeIn(200);
 
   playSound(randomChosenColour);
 }
 
 //START OVER
+
 function startOver() {
   level = 0;
   gamePattern = [];
