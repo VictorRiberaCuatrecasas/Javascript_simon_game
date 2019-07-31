@@ -35,6 +35,16 @@ td {
   border: 2px solid white;
   padding: 6px;
 }
+.dory {
+  max-width: 70%;
+  margin: auto;
+  display: initial !important;
+}
+.cheating {
+  max-width: 70%;
+  margin: auto;
+  display: initial !important;
+}
 .top10 {
   color: white;
   font-family: "Press Start 2P", cursive;

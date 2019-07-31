@@ -9,6 +9,8 @@ let table1 = document.querySelector("#table1");
 // STARTS THE GAME ON CLICK
 
 $("#level-title").click(function() {
+  $("#dory").removeClass("dory");
+  $("#cheating").removeClass("cheating");
   startOver();
   if (!started) {
     $("#level-title").text("Level " + level);
@@ -58,6 +60,14 @@ function checkAnswer(currentLevel) {
       $("body").removeClass("game-over");
     }, 200);
     $("#level-title").text("Game over, click on tittle to restart");
+
+    if (level > 19 && level < 30) {
+      $("#dory").addClass("dory");
+    }
+    if (level > 29) {
+      $("#cheating").addClass("cheating");
+    }
+
     if (level > scoreboard[9].score) {
       $("#top10btn").click();
     }
@@ -158,6 +168,6 @@ function tableScore() {
 //CLOSE MODAL
 
 function closeModal() {
+  scoreboard = [];
   $("#close").click();
-  location.reload();
 }
