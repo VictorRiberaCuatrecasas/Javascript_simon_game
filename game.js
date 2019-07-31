@@ -63,7 +63,7 @@ function checkAnswer(currentLevel) {
 
     if (level > 29) {
       $("#cheating").addClass("cheating");
-    } else if (level > 20) {
+    } else if (level > 19) {
       $("#dory").addClass("dory");
     }
 
