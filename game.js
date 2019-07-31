@@ -61,11 +61,10 @@ function checkAnswer(currentLevel) {
     }, 200);
     $("#level-title").text("Game over, click on tittle to restart");
 
-    if (level > 19 && level < 30) {
-      $("#dory").addClass("dory");
-    }
     if (level > 29) {
       $("#cheating").addClass("cheating");
+    } else if (level > 20) {
+      $("#dory").addClass("dory");
     }
 
     if (level > scoreboard[9].score) {
