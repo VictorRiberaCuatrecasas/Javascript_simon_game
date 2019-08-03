@@ -49,7 +49,9 @@ function animatePress(currentColor) {
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     if (userClickedPattern.length === gamePattern.length) {
-      nextSequence();
+      setTimeout(function() {
+        nextSequence();
+      }, 1000);
     }
   } else {
     playSound("wrong");
